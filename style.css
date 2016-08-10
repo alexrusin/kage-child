@@ -1,0 +1,127 @@
+/*
+Theme Name: Kage Child Theme
+Theme URI: http://alexrusin.com
+Description: A child theme for Kage 
+Author:  Alex Rusin
+Author URI:  http://alexrusin.com
+Template: kage
+Version: 0.1.0
+*/
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("../kage/style.css");
+
+
+a:link {
+    text-decoration: none;
+   
+}
+a:visited {
+    text-decoration: none;
+}
+.header_block a:hover, .services_slider a:hover {
+    text-decoration: none;
+    color:inherit;
+}
+
+.welcome_text a:hover {
+	color:#fff;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.topbar {
+	/*display:none;*/
+}
+.header_block{
+	padding-top:25px;
+	padding-bottom: 10px;
+	text-align:center;
+}
+.header_block .logo {
+    float:none;
+}
+.header_block .menucontainer {
+    float: none;
+    
+}
+
+
+/*adjust menu width and margins to center the menu*/
+
+.menutop {
+	display:inline-block;
+    margin: 0 auto;
+}
+
+
+	
+
+/*font for tagline*/
+.header_block .logo .italic {
+       font-size: 0.65em;
+}
+
+/*make slider wider and taller*/
+.mainslider .container {
+	max-width:1450px;
+	width:90%;
+}
+
+.mainslider .imgbox {
+	height:auto;
+}
+
+/*make services to have 3 images*/
+
+.services_block {
+	padding:50px 0;
+}
+
+.services_slider{
+	text-align:center;
+}
+
+.services_slider ul {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.services_slider li {
+	width:240px;
+	list-style: none;
+}
+
+/*correct portfolio buttons*/
+.portfolio_slider .btn {
+    margin: 0px 0px;
+}
+
+/*send button on contact form  css*/
+
+.wpcf7-form p .button {
+	padding: 1px 25px;
+}
+
+/*social icons styles*/
+
+.social-icons {
+    float: left;
+    white-space: nowrap;
+    margin-left:30px;
+}
+
+.social-icon {
+    display:inline;
+}
+
+@media only screen and (max-width: 768px) {
+	.social-icons{
+		float:none;
+		margin-left:auto;
+
+	}
+}
+
+
