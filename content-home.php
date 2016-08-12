@@ -178,7 +178,14 @@ get_header(); ?>
 				<?php if ( of_get_option('welcome_title') ) { ?>
 				<div class="container">
 					<div class="columnwrapp clearfix">
-					    <?php if ( of_get_option('welcome_image') ) { ?>
+						<?php if (of_get_option('welcome_video_link')) {?>
+
+						<div class="column2">						
+							<div class="gutter">
+						<iframe class="welcome-video" width="560" height="315" src="<?php echo esc_url(of_get_option('welcome_video_link')); ?>" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<?php }else if ( of_get_option('welcome_image') ) { ?>
 						<div class="column2">						
 							<div class="gutter">
 								<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />

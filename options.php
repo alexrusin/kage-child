@@ -241,7 +241,13 @@ function optionsframework_options() {
 		'name' => __('Welcome Image', 'options_framework_theme'),
 		'desc' => __('', 'options_framework_theme'),
 		'id' => 'welcome_image',
-		'type' => 'upload');	
+		'type' => 'upload');
+	$options[] = array(
+		'name' => __('Welcome Video Link', 'options_framework_theme'),
+		'desc' => __('Note: if both Welcome Image and Welcome Video are selected, video will take precedence', 'options_framework_theme'),
+		'id' => 'welcome_video_link',
+		'std' => '',
+		'type' => 'text');	
 		
 	$options[] = array(
 		'name' => __('Welcome Title', 'options_framework_theme'),
