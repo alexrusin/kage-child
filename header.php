@@ -52,8 +52,7 @@
 							<li class="social-icon"><a href="<?php echo esc_url(of_get_option('youtube_link'));?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();?>/img/youtube.png" alt="YouTube icon"/></a></li><?php }?>
 							<?php if ( of_get_option('g_link') ) { ?>
 							<li class="social-icon"><a href="<?php echo esc_url(of_get_option('g_link'));?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();?>/img/g.png" alt="Google icon"/></a></li><?php }?>
-							
-							</ul>
+						 </ul>
 					</div>
 				</div>	
 			</div>

@@ -7,8 +7,7 @@ Author URI:  http://alexrusin.com
 Template: kage
 Version: 0.1.0
 */
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-@import url("../kage/style.css");
+
 
 
 a:link {
@@ -121,6 +120,12 @@ a:active {
 		float:none;
 		margin-left:auto;
 
+	}
+
+	.services_slider li {
+    	width: auto;
+   		
+    	margin-left: 50px;
 	}
 }
 

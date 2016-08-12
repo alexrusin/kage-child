@@ -428,7 +428,7 @@ function optionsframework_options() {
 		'desc' => __('', 'options_framework_theme'),
 		'id' => 'g_link',
 		'std' => '',
-		'type' => 'text');		
+		'type' => 'text');	
 	
 	return $options;
 }
