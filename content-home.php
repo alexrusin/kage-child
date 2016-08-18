@@ -10,9 +10,9 @@ get_header(); ?>
 				<div class="container">
 					<div class="gutter clearfix">
 						<div class="imgbox">
-							
-							<?php if ( of_get_option('slider_image_1') ) { ?>
 							<!--bootstrap slider if first Slider image exists -->
+							<?php if ( of_get_option('slider_image_1') ) { ?>
+						
 							<div class="carousel slide" id="featured" data-ride="carousel" data-interval="4000">
 								<ol class="carousel-indicators">
 									<li data-target="#featured" data-slide-to="0" class="active"></li>
