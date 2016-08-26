@@ -39,3 +39,31 @@ function schema_TinyMCE_init($in)
     return $in;
 }
 add_filter('tiny_mce_before_init', 'schema_TinyMCE_init' );
+
+/*  Remove Hentry Classes
+/* ------------------------------------ */
+function remove_hentry( $classes ) {
+    if( !is_single() ) {
+        $classes = array_diff($classes, array('hentry'));
+        return $classes;
+    } else {
+        return $classes;
+    }
+}
+add_filter( 'post_class', 'remove_hentry' );
+
+/*shows images to only the user who uploaded them*/
+add_filter( 'posts_where', 'devplus_wpquery_where' );
+function devplus_wpquery_where( $where ){
+    global $current_user;
+
+    if( is_user_logged_in() ){
+         // logged in user, but are we viewing the library?
+         if( isset( $_POST['action'] ) && ( $_POST['action'] == 'query-attachments' ) ){
+            // here you can add some extra logic if you'd want to.
+            $where .= ' AND post_author='.$current_user->data->ID;
+        }
+    }
+
+    return $where;
+}
